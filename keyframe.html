@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @keyframes slideInFromRight {
+                0% {
+                    transform: translate(50%);
+                    opacity: 0;
+                }
+                100% {
+                    transform: translate(0);
+                    opacity: 1;
+                }
+            }
+
+            .slide-in {
+                animation: slideInFromRight 1s ease-in-out;
+                /* This will apply the animation to the element */
+                /* 1s is the duration of the animation */
+                /* ease-in-out is the timing function */
+            }
+        </style>
+        <title>Learning CSS animations</title>
+    </head>
+    <body>
+        <h1 class="slide-in">Hello, World!</h1>
+    </body>
+</html>

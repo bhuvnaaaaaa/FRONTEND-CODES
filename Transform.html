@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Transform</title>
+        <style>
+            .box {
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+                transition: transform 0.5s ease;
+                /* This will animate the transform property */
+                transform-origin: top right;
+                /* This will set the origin of the transform to the top left corner */
+            }
+            .box:hover {
+                transform: skew(30deg, 30deg);
+                /* This will skew the box on hover */
+                /* skewX(10deg) will skew the box along the X-axis */
+                /* skewY(10deg) will skew the box along the Y-axis */
+                /* skew(10deg, 0deg) will skew the box along both axes */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+        <p>Hover over the box to see the transform effect.</p>
+    </body>
+</html>
