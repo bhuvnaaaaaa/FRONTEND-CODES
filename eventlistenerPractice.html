@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>Event Listener Practice</title>
+</head>
+<body>
+    <!--
+    <h1 id="myHeading">Hello World</h1>
+    <button id="myButton">Click Me</button>
+
+    <script>
+        const heading = document.getElementById("myHeading");
+        const button = document.getElementById("myButton");
+
+        button.addEventListener('click', () => {
+            heading.textContent = "Button Clicked!";
+        });
+    </script>
+    -->
+
+    <div>
+        <input type="text" id="textInput" placeholder="Add an item">
+        <button id="addButton">Add Item</button>
+        <ul id="shoppingList"></ul>
+    </div>
+
+    <script>
+        const addButton = document.getElementById('addButton');
+        const textInput = document.getElementById('textInput');
+        const shoppingList = document.getElementById('shoppingList');
+
+        addButton.addEventListener('click' , () => {
+            const newItem = document.createElement('li');
+            newItem.textContent = textInput.value;
+            shoppingList.appendChild(newItem);
+            textInput.value = ''; // Clear the input field
+        });
+    </script>
+</body>

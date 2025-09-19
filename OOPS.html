@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            /*const emp = {
+                name: "John",
+                age: 30,
+                department: "HR"
+            };
+
+            console.log("Employee Details:");
+            console.log("Name: " + emp.name);
+            console.log("Age: " + emp.age);
+            console.log("Department: " + emp.department);*/
+
+            class Employee {
+                constructor(name, age, department) {
+                    this.name = name;
+                    this.age = age;
+                    this.department = department;
+                }
+
+                work() {
+                    console.log(this.name + " is working in the " + this.department + " department.");
+                }
+
+                doProject() {
+                    console.log(this.name + " is working on a project in the " + this.department + " department.");
+                }    
+            }
+            let emp1 = new Employee("Alice", 28, "Finance");
+            let emp2 = new Employee("Bob", 32, "IT");
+            emp1.work();
+            emp2.doProject();
+        </script>
+    </body>
+</html>

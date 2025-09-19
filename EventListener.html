@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event Listener</title>
+    </head>
+    <body>
+        <h1>Event Listener Example</h1>
+        <button id="myButton">Click Me!</button>
+
+        <script>
+            const button = document.getElementById('myButton');
+            //Function to handle button click
+            /*button.addEventListener('click', function() {
+                alert('Button was clicked!');
+            });*/
+
+            button.addEventListener('dblclick', function() {
+                alert('Button was double-clicked!');
+            });
+
+            document.addEventListener('keydown', (event) => {
+                alert(`Key pressed: ${event.key}`);
+            })
+            
+        </script>
+    </body>
+</html>
