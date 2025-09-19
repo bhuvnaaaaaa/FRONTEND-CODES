@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <script>
+            let fruits = ['apple', 'banana', 'cherry'];
+            console.log(fruits[2]);
+
+            let names = new Array('Alice', 'Bob', 'Charlie');
+            console.log(names[1]);
+
+            let arr = ['Java', true, 42, null, 'Python'];
+            console.log(arr[1]);
+            console.log(arr.length);
+
+            arr.pop();  // removes the last element
+            console.log(arr);
+
+            arr.push('JavaScript'); // adds an element to the end
+            console.log(arr);
+
+            arr.shift(); // removes the first element
+            console.log(arr);
+
+            arr.unshift('C++'); // adds an element to the beginning
+            console.log(arr);
+
+            let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+            console.log(numbers);
+            numbers.splice(1,2,99); // removes 2 elements starting from index 1 and adds 99
+            console.log(numbers);
+
+
+            let numbers1 = numbers.slice(2, 5); // creates a new array from index 2 to 5 (exclusive)
+            console.log(numbers1);
+
+            //Note: SLice does not modify the original array, it returns a new array. Slice is used to extract a portion of an array without modifying the original array.
+            // Splice is used to add or remove elements from an array and modifies the original array.
+
+            console.log(numbers.indexOf(99)); // returns the index of the first occurrence of 99
+
+            let myArr = [40, 10, 30, 20, 50];
+            console.log(myArr);
+
+            myArr.map(function(x) {
+                console.log(x * 2); // multiplies each element by 2
+            });
+            // Note: map() creates a new array with the results of calling a provided function on every element in the calling array.
+
+            console.log(myArr.sort()); // sorts the array in ascending order
+            console.log(myArr.reverse()); // reverses the order of the array
+
+            myArr.forEach(function(x) {
+                console.log(x);
+            });
+
+            let nums = [1, 2, 3, 4, 5];
+            let evennumbers = nums.filter(num => num % 2 === 0); // filters even numbers
+            console.log(evennumbers);
+
+            let sum = nums.reduce((accumulator, currentValue) => accumulator + currentValue, 0); // sums all elements
+            console.log(sum);
+
+            
+            
+        </script>
+    </head>
